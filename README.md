@@ -5,7 +5,7 @@ pip install -r configs/requirements.txt
 
 ## Get VK token
 ```bash
-https://oauth.vk.com/token?grant_type=password&client_id=<YOU client_id>&client_secret=<YOU client_secret>&username=<YOU PHONE>&password=<YOU PASSWORD>
+python3 service\vk_get_token.py --phone 'YOU PHONE' --password 'YOU PASS' --client_id 'YOU client_id' --client_secret 'YOU client_secret'
 ```
 
 ## Setup config file
@@ -19,7 +19,7 @@ keywords:
   - "Уралсиб"
   - "уралсиб"
 save_output_to_file: "comments_output.json"
-vk_token: "you token like vk1.a.***"
+vk_token: "you token like vk1.a.***" (if you don't run service\vk_get_token.py)
 ```
 
 ## Run script

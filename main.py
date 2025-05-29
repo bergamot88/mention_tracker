@@ -80,7 +80,7 @@ def save_comments_to_file(comments: List, output_file_path: str):
 
 
 def main() -> None:
-    args = get_parse_args()
+    args: Namespace = get_parse_args()
     load_env_vars()
 
     config: Dict = {}
