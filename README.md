@@ -1,6 +1,15 @@
 ## Install packages
+
+`Windows`
+```powershell
+scripts\setup_env.ps1
+venv\Scripts\activate 
+```
+
+`Linux`
 ```bash
-pip install -r configs/requirements.txt
+scripts/setup_env.sh
+source venv/bin/activate
 ```
 
 ## Get VK token
